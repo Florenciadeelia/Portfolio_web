@@ -1,0 +1,34 @@
+
+/*SECCIÓN CV*/
+
+#buttomCv{
+  	margin: 20px;
+  	animation-name: efectoCv; /* Es el nombre del efecto para después vincularlo*/
+  	animation-iteration-count: infinite; /* Cuánto se repite */
+  	animation-timing-function: ease-in; /* Una función  https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp */
+  	animation-duration: 2s;
+  	animation-delay: 0s;
+}
+
+@keyframes efectoCv{
+	0%{ 
+    width: 130px;
+    height: 50px
+	}
+	50% {
+    width: 160px;
+    height: 60px
+	}
+	100%{ 
+    width: 130px;
+	}
+}
+
+#homeCv{
+  	background-color: #ffffff;
+  	width: 100%;
+  	display: inline-block;
+  	margin-top: 8rem;
+}
+
+

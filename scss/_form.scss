@@ -1,0 +1,64 @@
+
+/* FORM */
+
+#sectionForm{
+  	background-color: #f3f3f3;
+  	height: 80rem;
+  	padding: 1rem 0;
+  	margin-top: 2rem;
+}
+
+#formCenter{
+  	align-content: left;
+}
+
+.formLabel {
+  	display: inline-block;
+  	margin-bottom: 1rem;
+  	color: black;
+  	font-size: 1.4rem;
+  	margin-top: 2rem;
+}
+
+.inputFormat {
+  	display: block;
+  	width: 60%;
+  	padding: 1.2rem 2rem;
+  	font-size: 1.4rem;
+  	line-height: 1.5;
+  	color: #495057;
+  	background-color: #fff;
+  	background-clip: padding-box;
+  	border: 0.1rem solid #ced4da;
+  	align-content: center;
+}
+
+.principalButtom {
+  	border: none;
+  	background-color: #d473ff; 
+  	color: white; 
+  	padding: 1.4rem 2.8rem; 
+  	font-size: 1.6rem;
+  	cursor: pointer;
+  	border-radius: 1rem;
+}
+
+.principalButtom:hover {
+  	background: #d8b8e6;
+  	font-weight: 500;
+}
+
+.secondaryButtom {
+  	border: solid 0.2rem #c677e6;
+  	background-color: white;
+  	color: #d473ff;
+  	padding: 1.3rem 2.8rem;
+  	font-size: 1.6rem;
+  	cursor: pointer;
+  	border-radius: 1rem;
+}
+
+.secondaryButtom:hover {
+  	background: #e7e7e7;
+  	font-weight: 500;
+}

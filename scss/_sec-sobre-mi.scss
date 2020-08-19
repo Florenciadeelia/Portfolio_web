@@ -1,0 +1,62 @@
+
+/* SECCIÓN SOBRE MI */
+
+@each $ciudad in la, chicago, ny {
+   .#{$ciudad} { 
+         background-image:  
+          url('images/#{$ciudad}.jpg');
+    }
+}
+
+@for $n from 0 through 10 {
+    .mar_l_#{$n} {
+        margin-left: .5rem * $n;
+    }
+}
+
+@for $n from 0 through 10 {
+    .mar_r_#{$n} {
+        margin-right: .5rem * $n;
+    }
+}
+
+@for $n from 0 through 10 {
+    .mar_t_#{$n} {
+        margin-top: .5rem * $n;
+    }
+}
+
+@for $n from 0 through 10 {
+    .mar_b_#{$n} {
+        margin-bottom: .5rem * $n;
+    }
+}
+
+
+.sobreMi{
+	margin-top: 8rem;
+	padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+
+
+@media (max-width: 768px) {
+.sobreMi {
+padding: 4rem 2rem;
+}
+}
+
+.miPresentacion{
+  flex-basis: 800px;
+}
+
+.imgSobreMi{
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#pLight{
+  color: #292a2e;
+  text-align: left;
+  font-size: 2rem;
+}

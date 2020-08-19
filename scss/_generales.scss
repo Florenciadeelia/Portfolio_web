@@ -1,0 +1,140 @@
+/* GENERALES */
+
+#html {
+	/* etiqueta raíz */
+  	font-size: 62.5%;
+}
+
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+.body{
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+
+#btn{
+	padding: 0;
+	color: #d473ff;
+	font-size: 1.1rem;
+}
+
+#tituloPrincipal{
+	color: #292a2e;
+  	font-size: 4rem;
+  	text-align: left;
+  	font-weight: 900;
+  	margin-top: 3rem;
+  	margin-bottom: 2rem;
+ }
+
+.tituloSecundarioLight{
+  	color: #20383b;
+  	font-size: 3rem;
+  	font-weight: 500;
+  	margin-top: 5rem;
+  }
+
+.principalButtom {
+  	border: none;
+  	background-color: #d473ff; 
+  	color: white; 
+  	padding: 1.4rem 2.8rem; 
+  	margin-top: 2rem;
+  	font-size: 1.6rem;
+  	cursor: pointer;
+  	border-radius: 1rem;
+  	text-align: center;
+}
+
+.principalButtom:hover {
+  	background: #d8b8e6;
+  	font-weight: 500;
+}
+
+.secondaryButtom {
+  	border: solid 0.2rem #c677e6;
+  	background-color: white;
+  	color: #d473ff;
+  	padding: 1.3rem 2.8rem;
+  	font-size: 1.6rem;
+  	cursor: pointer;
+  	/* border-color: #4d69db; */
+  	border-radius: 1rem;
+}
+
+.secondaryButtom:hover {
+  	background: #e7e7e7;
+  	font-weight: 500;
+}
+
+.subtitulo{
+	padding-top: 2rem;
+	text-decoration: overline;
+	/* background-color: #ffc1079e; */
+}
+
+
+/* HEADER */
+#headerNav{
+	background-color: #5f6875;
+	box-shadow: 0px 0px 13px #484a52;
+	position: fixed;
+	top: 0;
+	right:0;
+	left: 0;
+}
+
+#logoNav{
+	font-size: 3rem;
+}
+
+.navbar-brand{
+	font-size: 3rem;
+	font-weight: 700;
+  	animation-duration: 8s;
+  	animation-name: aparecer;
+  	animation-iteration-count: infinite;
+}
+
+.navbar-nav li a{
+	float: right;
+  	display: block;
+  	color: #e9ecef;
+  	text-align: center;
+  	padding: 2.4rem 2.5rem;
+  	text-decoration: none;
+  	font-size: 1.7rem;
+  	border-bottom: 0.3rem solid transparent;
+}
+
+#dropdownMenu-toggle{
+	color: #e9ecef;
+}
+
+#dropdown-menu{
+	background-color: #343a40;
+}
+
+
+.navbar-nav li a:hover {
+  	border-bottom: 0.4rem solid #d473ff;
+}
+
+@keyframes aparecer{
+  	0%{
+    opacity: 100%;
+  	}
+  	100%{opacity: 1%;
+  	}
+}

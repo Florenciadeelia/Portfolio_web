@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html id="html" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio Florencia de Elia</title>
+
+    <!-- Descripción del sitio -->
+    <meta name="description" content="Portfolio de diseñador UX/UI y diseñador gráfico. CV digital con ejemplos de trabajos realizados">
+
+    <!-- Palabras clave para el buscador -->
+    <meta name="keywords"  content="Portfolio, CV, Diseño gráfico, UX, UI, portafolio diseñador grafico, behance diseño grafico, trabajo diseñador gráfico, trabajo UX, proyectos UX, proyectos UI, portafolio">
+
+    <!-- Tag para que el sitio se adapte a los estilos responsivos, esencial para dispositivos móviles. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Tipografía -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+</head>
+
+<!-- BODY -->
+<body>
+     
+    <!-- MENÚ -->
+    <nav id="headerNav" class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+        <div class="container">
+            <!-- Logo -->
+            <a id="logoNav" class="navbar-brand" href="index.html">Logo</a>
+
+            <!-- Secciones -->
+            <ul class="navbar-nav">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="sobreMi.html">Sobre mi</a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a id="dropdownMenu-toggle" class="dropdown-toggle" data-toggle="dropdown">Proyectos</a>
+                    <div id="dropdown-menu" class="dropdown-menu">
+                        <a class="dropdown-item" href="proyectos.html">Diseño UX</a>
+                        <a class="dropdown-item" href="proyectos.html">Animaciones</a>
+                        <a class="dropdown-item" href="proyectos.html">Identidad</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="curriculum.html">CV</a>
+                </li>
+
+                <li>
+                    <a href="#sectionForm">Contacto</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <div id="jumbotronAdd" class="jumbotron">
+        <div class="container">
+            <h1 id="tituloPrincipal" >Florencia de Elia Salgado</h1>
+            <p class="body">Me interesa estar involucrada en el entendimiento de los productos, la investigación y el conocer a sus usuarios, contextos, expectativas e intereses. 
+            Soy una persona proactiva y entusiasta con habilidades analíticas. </p>
+            <p class="body"> Disfruto del trabajo en equipo y poder <u> potenciar los resultados a través de la iteración constante.</u> </p>
+        
+            <input type="" class="principalButtom" value="Descagrar CV">
+        </div>
+    </div>
+
+    <!-- PROYECTOS -->
+    <div id="proyectosHome" class="container">
+            
+        <h2 class="tituloSecundarioLight"> Últimos proyectos </h2>
+            <p class="body">Actualmente me desempeño como diseñadora UX/UI.</p>
+            <br>
+
+        <div id="imgHome" class="row">
+            <!-- PROYECTO 1 -->
+            <div class="col-md-4 col-sm-10" >
+                <img class="img-thumbnail imgProyecto" width="95%" height="100%" src="img/P1.png" alt="imagenproyecto1">
+                <br>
+                <!-- DESCRIPCIÓN PROYECTOS -->
+                <h3 class="subtitulo">Proyecto 1</h2>
+                <p>Descripción del proyecto, año en el que fue realizado, nombre del cliente, alguna info a destacar, rubro y cualquier otra cosa.</p>
+                <p><a id="btn" class="btn btn-default" href="#" role="button">Ver más &raquo;</a></p>
+            </div>
+
+            <!-- PROYECTO 2 -->
+            <div class="col-md-4 col-sm-10" >
+                <img class="img-thumbnail imgProyecto" width="95%" height="100%" src="img/P2.png" alt="imagenproyecto2">
+                <br>
+                <!-- DESCRIPCIÓN PROYECTOS -->
+                <h3 class="subtitulo">Proyecto 2</h2>
+                <p>Descripción del proyecto, año en el que fue realizado, nombre del cliente, alguna info a destacar, rubro y cualquier otra cosa.</p>
+                <p><a id="btn" class="btn btn-default" href="#" role="button">Ver más &raquo;</a></p>
+            </div>
+
+            <!-- PROYECTO 3 -->
+            <div class="col-md-4 col-sm-10" >
+                <img class="img-thumbnail imgProyecto" width="95%" height="100%" src="img/P4.png" alt="imagenproyecto3">
+                <br>
+                <!-- DESCRIPCIÓN PROYECTOS -->
+                <h3 class="subtitulo">Proyecto 3</h2>
+                <p>Descripción del proyecto, año en el que fue realizado, nombre del cliente, alguna info a destacar, rubro y cualquier otra cosa.</p>
+                <p><a id="btn" class="btn btn-default" href="#" role="button">Ver más &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!--FORMULARIO-->
+    <section id="sectionForm">
+     
+
+        <div id="formCenter" class="container"> 
+            <h2 class="tituloSecundarioLight"> Enviá tu consulta </h2>
+
+            <form name="contactForm" action="send.php" method="get" accept-charset="utf-8">
+
+                <!--INPUT NOMBRE-->
+                <lablel for=nombre class=formLabel> Nombre </lablel>
+
+                <input type="name" name="example_name" placeholder="Nombre apellido" required="required" class="inputFormat"> 
+
+                <!--INPUT EMAIL-->
+                <label for=email class=formLabel> Email: </label>
+
+                <input type="email" name="example_mail" placeholder="nombre@gmail.com" required="required" class="inputFormat">
+
+                <!--DROPDOWN-->
+                <lablel for=seleccionaConsulta class=formLabel> Tipo de consulta </lablel>
+                <select type="tipo_consulta" name="motivo" class="inputFormat">
+                    <option name=Presupuesto value="Presupuesto">Presupuesto
+                    </option>
+                    <option name=Propuesta value="Propuesta">Propuesta laboral
+                    </option>
+                    <option name=Consulta value="Consulta">Consulta
+                </option>
+                </select>
+
+                <!--AREA DE TEXTO-->
+                <lablel for=mensaje class=formLabel> Mensaje </lablel>
+                <textarea name="consultas" rows="10" cols="25" required="required" class="inputFormat"> </textarea>
+
+
+                <br>
+                <!--BOTONES-->
+                <input type="submit" value="Enviar consulta" class="principalButtom">
+                <input type="reset" value="Borrar" class="secondaryButtom"> 
+                <br>
+                <br>
+            </form>  
+        </div>
+    </section>
+
+
+    <!--FOOTER-->
+    <div id="sectionFooter">
+        <footer id="footerConteiner" class="container">
+         <h4 id="titleFooter"> Encontrá más información en mis redes </h4> 
+        
+            <ul class="itemsFooter">
+                <!--REDES-->
+                <div class="row">
+                    <div class="col-md-1">
+                        <li> <a href="https://www.behance.net/florenciadeelia" target="_blank"> Behance </a> </li>
+                    </div>
+
+                    <div class="col-md-1">
+                        <li> <a href="https://www.behance.net/florenciadeelia" target="_blank"> Facebook </a> </li>
+                    </div>
+
+                    <div class="col-md-1">
+                        <li> <a href="https://www.behance.net/florenciadeelia" target="_blank"> Instagram </a> </li>
+                    </div>
+
+                    <div class="col-md-1">
+                        <li> <a href="https://www.linkedin.com/in/florencia-deelia-salgado/" target="_blank"> Linkedin </a> </li>
+                    </div>
+                </div>
+            </ul>
+        
+        </footer>
+    </div>
+
+    
+    <!-- ¿Van todos estos links o estoy poniendo de más? -->
+
+    <!-- JS, Popper.js, and jQuery -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/boostrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

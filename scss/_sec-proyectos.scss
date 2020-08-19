@@ -1,0 +1,61 @@
+/*SECCIÓN PROYECTOS */
+#homeProyectos{
+	margin-top: 8rem;
+}
+
+.cont {
+	background-color: #ffffff;
+	border-radius: 15px;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-bottom: 50px;
+	box-shadow: 0px 10px 10px 0px #c7c7c7; 
+}
+
+.cont__img {
+	width: 350px;
+	height: 260px;
+	margin-right: 30px;
+}
+
+.cont__titulo {
+	font-size:3rem;
+	margin-bottom: 20px;
+}
+
+.cont__parrafo {
+	line-height: 28px;
+	font-size:2rem;
+}
+
+.smallBottom{
+	border: none;
+  	background-color: #d473ff; 
+  	color: white; 
+  	font-size: 1.5rem;
+  	cursor: pointer;
+  	border-radius: 1rem;
+  	text-decoration: none;
+  	display: inline-block;
+  	height: 60px;
+  	width: 150px;
+	padding: 20px;
+	text-align: center;
+}
+
+.smallBottom--Right{
+		position: absolute;
+		right: 50px;
+		bottom: -25px;
+		border: none;
+		}
+
+
+.smallBottom:hover {
+	background: #d8b8e6;
+	color: white; 
+  	font-weight: 500;
+}
+

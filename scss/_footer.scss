@@ -1,0 +1,50 @@
+/*FOOTER*/
+$color-pink: #e7b6fc;
+$color-grey: #001F3F;
+$background-colorlight: #001F3F;
+$font1: 1.2rem 'Raleway', sans-serif;
+$ancho: 100%;
+$alto: 100%;
+
+
+
+#sectionFooter{
+  background-image: linear-gradient(#494b4f, #17181a);
+  width: $ancho;
+  display: inline-block;
+
+    .sobreMi{
+      position: absolute;
+      bottom: 0px;
+    }
+}
+
+#titleFooter{
+  font-size: $font1;
+  color: white;
+  display: block;
+  text-align: left;
+  margin-top: 3rem;
+}
+
+.itemsFooter {
+  list-style: none;
+  padding-inline-start: 0px;
+  color: white;
+
+      li a {
+      text-align: center;
+      text-decoration: none;
+      font-size: $font1;
+      padding: 1rem 0 1rem 0;
+      border-bottom: 0.3rem solid transparent;
+      display: block;
+      float: left;
+      color: $color-pink;
+      }
+}
+
+.itemsFooter li a:hover {
+	color: #d473ff;
+	font-weight: 400;
+}
