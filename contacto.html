@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sobre Florencia de Elia</title>
+    <title>Contacto</title>
 
     <!-- Descripción del sitio -->
-    <meta name="description" content="Breve descripción sobre Florencia de Elia como profesional, intereses, motivaciones, experiencia.">
+    <meta name="description" content="Formulario de contacto para consultar o presupuestos.">
 
     <!-- Palabras clave para el buscador -->
-    <meta name="keywords"  content="Portfolio, CV, Diseño gráfico, UX, UI, portafolio diseñador grafico, behance diseño grafico, trabajo diseñador gráfico, trabajo UX, proyectos UX, proyectos UI, portafolio, descripción de intereses, profesional de diseño">
+    <meta name="keywords"  content="Portfolio, CV, Diseño gráfico, UX, UI, portafolio diseñador grafico, behance diseño grafico, trabajo diseñador gráfico, trabajo UX, proyectos UX, proyectos UI, portafolio, descripción de intereses, profesional de diseño, presupuesto de diseño">
 
     <!-- Tag para que el sitio se adapte a los estilos responsivos, esencial para dispositivos móviles. -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 </head>
 
@@ -66,36 +66,72 @@
         </div>
     </nav>
 	
-	<div class="sobreMi">
-		<div class="container">
-			<h1 id="tituloPrincipal"> Mi presentación </h1>
-			<div class="row">
-				
-				<div class=" col-md-6 col-sm-10"> 
+	<div id="jumbotronAdd" class="jumbotron">
+    	
+        <div class="container">
+    		
+            <h1 id="tituloPrincipal"> Contacto </h1>
 
-                    <h3 class="subtituloPresentacion"> Florencia de Elia Salgado </h3>
-					<article id="pLight" class="miPresentacion">
-					Soy diseñadora gráfica. Me recibí en la UBA en el 2017 y desde el 2018 estuve dando clases en la materia diseño gráfico nivel 3, cátedra Rico.
-					Me gusta aprender cosas nuevas y participar de desafíos. Tengo conocimientos sobre animación, edición de videos y fotografía.
-					Mi experiencia laboral está más enfocada en el área de UX y UI para plataformas mobile (Android y iOS). 
-					Tengo 27 años, vivo en Capital Federal.  
-					</article>
-				</div>
+            <div class="row">
 
-                <div class="miInfo col-md-6 col-sm-10">
-                    <article class="miPresentacion">
-                    <img class="img-thumbnail imgSobreMi" width="80%" height="50%" src="img/fotoPerfil.jpg" alt="imagenSobreMi">
-                    </article>
+                <div class="col-md-5">
+                    <h3> Celular: </h3> 1164889619
+                    <h3> E-mail: </h3> fdeeliasalgado@gmail.com
+                    <h3> Linkedin </h3> /florenciadeelia
+
+                    <img src="img/map.jpg" style="width:100%">
+                </div> 
+    			
+                <!--FORMULARIO-->
+                <div class="col-md-7">
+                    <div id="formCenter" class="container"> 
+
+                        <form name="contactForm" action="send.php" method="get" accept-charset="utf-8">
+
+                            <!--INPUT NOMBRE-->
+                            <lablel for=nombre class=formLabel> Nombre </lablel>
+
+                            <input type="name" name="example_name" placeholder="Nombre apellido" required="required" class="inputFormat"> 
+
+                            <!--INPUT EMAIL-->
+                            <label for=email class=formLabel> Email: </label>
+
+                            <input type="email" name="example_mail" placeholder="nombre@gmail.com" required="required" class="inputFormat">
+
+                            <!--DROPDOWN-->
+                            <lablel for=seleccionaConsulta class=formLabel> Tipo de consulta </lablel>
+                            <select type="tipo_consulta" name="motivo" class="inputFormat">
+                                <option name=Presupuesto value="Presupuesto">Presupuesto
+                                </option>
+                                <option name=Propuesta value="Propuesta">Propuesta laboral
+                                </option>
+                                <option name=Consulta value="Consulta">Consulta
+                            </option>
+                            </select>
+
+                            <!--AREA DE TEXTO-->
+                            <lablel for=mensaje class=formLabel> Mensaje </lablel>
+                            <textarea name="consultas" rows="10" cols="25" required="required" class="inputFormat"> </textarea>
+
+
+                            <br>
+                            <!--BOTONES-->
+                            <input type="submit" value="Enviar consulta" class="principalButtom">
+                            <input type="reset" value="Borrar" class="secondaryButtom"> 
+                            <br>
+                            <br>
+                        </form>  
+                    </div>
                 </div>
 
-			</div>
-		</div>
-	</div>
+            </div>
+    	</div>
+    </div>
 	
 
 
 	<!--FOOTER-->
-    <div id="sectionFooter" class="especial">
+    <div id="sectionFooter">
         <footer id="footerConteiner" class="container">
 
             <p id="titleFooter"> Encontrá más información en mis redes </p> 
@@ -111,7 +147,6 @@
             </div>
         </footer>
     </div>
-
 
 
 	<!--LINKS PARA BOOSTRAP-->

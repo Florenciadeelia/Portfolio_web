@@ -12,7 +12,7 @@
     <!-- Palabras clave para el buscador -->
     <meta name="keywords"  content="Portfolio, CV, Diseño gráfico, UX, UI, portafolio diseñador grafico, behance diseño grafico, trabajo diseñador gráfico, trabajo UX, proyectos UX, proyectos UI, portafolio">
 
-    <!-- Tag para que el sitio se adapte a los estilos responsivos, esencial para dispositivos móviles. -->
+     <!-- Tag para que el sitio se adapte a los estilos responsivos, esencial para dispositivos móviles. -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Mi CSS -->
@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <!-- BODY -->
@@ -33,37 +33,34 @@
 
         <div class="container">
             <!-- Logo -->
-            <a id="logoNav" class="navbar-brand" href="index.html">Logo</a>
+            <a id="logoNav" class="navbar-brand" href="index.html">Graphic Designer</a>
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler navbar-toggler-right collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsibe" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
 
             <!-- Secciones -->
-            <ul class="navbar-nav">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li> <a href="index.html">Inicio</a> </li>
 
-                <li>
-                    <a href="sobreMi.html">Sobre mi</a>
-                </li>
+                    <li> <a href="sobreMi.html">Sobre mi</a> </li>
 
-                <!-- Dropdown -->
-                <li class="nav-item dropdown">
-                    <a id="dropdownMenu-toggle" class="dropdown-toggle" data-toggle="dropdown">Proyectos</a>
-                    <div id="dropdown-menu" class="dropdown-menu">
-                        <a class="dropdown-item" href="proyectos.html">Diseño UX</a>
-                        <a class="dropdown-item" href="#">Animaciones</a>
-                        <a class="dropdown-item" href="#">Identidad</a>
-                    </div>
-                </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a id="dropdownMenu-toggle" class="dropdown-toggle" data-toggle="dropdown">Proyectos</a>
+                        <div id="dropdown-menu" class="dropdown-menu">
+                            <a class="dropdown-item" href="proyectos.html">Diseño UX</a>
+                            <a class="dropdown-item" href="proyectos.html">Animaciones</a>
+                            <a class="dropdown-item" href="proyectos.html">Identidad</a>
+                        </div>
+                    </li>
 
-                <li>
-                    <a href="curriculum.html">CV</a>
-                </li>
+                    <li> <a href="curriculum.html">CV</a> </li>
 
-                <li>
-                    <a href="index.html#sectionForm">Contacto</a>
-                </li>
-
-            </ul>
+                    <li> <a href="contacto.html">Contacto</a> </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -72,6 +69,10 @@
         <div class="container">
 
 			<h1 id="tituloPrincipal">Proyectos</h1>
+			<p class="body"> Una selección de trabajos realizados en su mayoría en equipo, dentro de cada uno vas a poder encontrar más información sobre el proceso. </p>
+
+			<br>
+			<br>
 
 			<!-- Bloques de proyectos -->
 			<section>	
@@ -79,10 +80,10 @@
 					<img id="foto1" class="cont__img imgProyecto" src="img/P1.png" alt="">
 					<div>
 						<h3 class="cont__titulo">
-							Proyecto 1.
+							Postales Acuario
 						</h3>
 						<p class="cont__parrafo">
-								Trabajo de identidad realizado para la empresa Entregandus en 2019. Un pocas de información del proceso.
+								Trabajo de identidad realizado para la empresa Acurio Bols en 2013. Se realizaron piezas gráficas como postales, afiche, gráfica para redes sociales, logo y fotografía. Para la definición de la marca utilizamos el uso de texturas que nos relacionen con la piel animal.
 						</p>
 						<a class="smallBottom smallBottom--Right" href="#">
 							Ver más
@@ -96,10 +97,10 @@
 					<img id="foto1" class="cont__img imgProyecto" src="img/P5.png" alt="">
 					<div>
 						<h3 class="cont__titulo">
-							Proyecto 2.
+							Hospital Udaondo
 						</h3>
 						<p class="cont__parrafo">
-								Trabajo de identidad realizado para la empresa Entregandus en 2019. Un pocas de información del proceso.
+								Realizamos una nueva identidad para el hospital Udaondo, para ello nos metimos de lleno en su historia, visitamos su establecimiento y hablamos con los trabajadores y pacientes que están allí a diario. Nos centramos en los vinculos de intercambio entre pacientes, familiar y médicos como base de la nueva marca y lo representamos a través de formas geométricas que se vinculan y completan constantemente. 
 						</p>
 						<a class="smallBottom smallBottom--Right" href="#">
 							Ver más
@@ -113,10 +114,11 @@
 					<img id="foto1" class="cont__img imgProyecto" src="img/P2.png" alt="">
 					<div>
 						<h3 class="cont__titulo">
-							Proyecto 3.
+							Lectores Itinerantes
 						</h3>
 						<p class="cont__parrafo">
-								Trabajo de identidad realizado para la empresa Entregandus en 2019. Un pocas de información del proceso.
+							Logo y marca para un emprendimiento de lectura que consiste en ofrecer un taller de lectores en constante movimiento y debate. El cliente quería reforzar la idea de libertad, escucha, creatividad y inclusón.
+							Decidimos tomar la imagen de un ave como símbolo de vuelo y movimiento constante. 
 						</p>
 						<a class="smallBottom smallBottom--Right" href="#">
 							Ver más
@@ -169,40 +171,27 @@
 	<!--FOOTER-->
     <div id="sectionFooter">
         <footer id="footerConteiner" class="container">
-         <h4 id="titleFooter"> Encontrá más información en mis redes </h4> 
-        
-            <ul class="itemsFooter">
+
+            <p id="titleFooter"> Encontrá más información en mis redes </p> 
+
+            <div class="menuSocial">
                 <!--REDES-->
-                <div class="row">
-                    <div class="col-md-1">
-                        <li> <a href="https://www.behance.net/florenciadeelia" target="_blank"> Behance </a> </li>
-                    </div>
-
-                    <div class="col-md-1">
-                        <li> <a href="https://www.behance.net/florenciadeelia" target="_blank"> Facebook </a> </li>
-                    </div>
-
-                    <div class="col-md-1">
-                        <li> <a href="https://www.behance.net/florenciadeelia" target="_blank"> Instagram </a> </li>
-                    </div>
-
-                    <div class="col-md-1">
-                        <li> <a href="https://www.linkedin.com/in/florencia-deelia-salgado/" target="_blank"> Linkedin </a> </li>
-                    </div>
-                </div>
-            </ul>
-        
+                <ul class="itemsFooter">
+                    
+                    <li> <a href="https://www.behance.net/florenciadeelia" target="_blank"> <img width="40%" src="img/redes/behance.png"> </a> </li>
+                        
+                    <li> <a href="https://www.linkedin.com/in/florencia-deelia-salgado/" target="_blank"> <img width="40%" src="img/redes/linkedin.png"> </a> </li>
+                </ul>
+            </div>
         </footer>
     </div>
-
     
     <!-- ¿Van todos estos links o estoy poniendo de más? -->
 
     <!-- JS, Popper.js, and jQuery -->
 
-   	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 
     <script src="js/jquery.js"></script>
