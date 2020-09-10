@@ -158,7 +158,6 @@ ul {
 
 .detalleProyecto{
   margin-top: 7rem;
-  margin-bottom: 2rem;
 }
 
 #tituloProyecto{
@@ -248,6 +247,11 @@ ul {
 .secondaryButtom:hover {
   background: #e7e7e7;
   font-weight: 500; }
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
 
 /*FOOTER*/
 #sectionFooter {
@@ -343,16 +347,41 @@ ul {
   margin-bottom: 50px;
   box-shadow: 0px 10px 10px 0px #c7c7c7; }
 
+@media (max-width: 767px) {
+  .cont {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 50px;
+  box-shadow: 0px 10px 10px 0px #c7c7c7;} }
+
 .cont__img {
   width: 350px;
   height: 260px;
   margin-right: 30px; }
 
+@media (max-width: 992px) {
+  .cont__img {
+    width: 300px;
+    height: 220px;
+    margin-right: 30px; } }
+
+
+@media (max-width: 767px) {
+  .cont__img {
+    width: 220px;
+    height: 160px;
+    margin: 2rem; } }
+
 .cont__titulo {
   font-size: 2.5rem;
   margin-bottom: 20px;
   font-weight: 600;
-  color: #5f3173;
+  color: #343a40;
   margin: 2rem; }
 
 .cont__parrafo {
@@ -360,6 +389,20 @@ ul {
   font-size: 1.7rem;
   color: #6e6e6e;
   margin: 2rem 5rem 2rem 2rem; }
+
+@media (max-width: 992px) {
+  .cont__parrafo {
+    line-height: 23px;
+    font-size: 1.5rem;
+    color: #6e6e6e;
+    margin: 2rem 2rem 2rem 2rem;} }
+
+@media (max-width: 767px) {
+  .cont__parrafo {
+    line-height: 18px;
+    font-size: 1.2rem;
+    color: #6e6e6e;
+    margin: 2rem 2rem 2rem 2rem;} }
 
 .smallBottom {
   border: none;
@@ -385,6 +428,16 @@ ul {
   background: #d8b8e6;
   color: white;
   font-weight: 500; }
+
+.tituloCarousel {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #343a40;
+  padding: 1rem 0rem;
+}
 
 /* SECCIÓN SOBRE MI */
 
